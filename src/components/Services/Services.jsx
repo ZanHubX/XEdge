@@ -63,6 +63,7 @@ const Services = () => {
       {/* header section */}
       <div className="text-center w-3/4 mx-auto space-y-2 ">
         <motion.h1
+          whileInView={"visible"}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -76,6 +77,7 @@ const Services = () => {
           Trend & <span className="text-primary">Unique</span>
         </motion.h1>
         <motion.p
+        variants={cardVariants}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -114,7 +116,7 @@ const Services = () => {
             className="text-center p-4"
           >
             <img
-              className=" w-[250px] h-[250px] ml-24 border-2 mt-10 border-primary rounded-2xl"
+              className=" w-[250px] h-[250px] ml-20 border-2 mt-10 border-primary rounded-2xl"
               src={service.image}
               alt={service.altText || "Service image"}
             />

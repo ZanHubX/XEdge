@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Navbar Section */}
           <Navbar sidebar={sidebar} setSidebar={setSidebar} />
           {/* Hero Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[850px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[695px]">
             {/* text Content Section */}
             <div className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28">
               <motion.h1
@@ -63,6 +63,7 @@ const Hero = () => {
             {/* Hero Image Section */}
             <div className="realtive">
               <motion.img
+               
                 initial={{ scale: 0 }}
                 animate={{ rotate: 360, scale: 1.1 }}
                 transition={{
@@ -130,14 +131,14 @@ const Hero = () => {
         {/* sidebar section */}
         {sidebar && (
           <motion.div
-            initial={{ x: "10%" }}
+            initial={{ x: "40%" }}
             animate={{ x: 0 }}
-            className="absolute top-0 right-0 w-[140px] h-full bg-primary/50 backdrop-blur-sm z-10"
+            className="absolute top-0 right-0 w-[140px] h-full bg-primary/50 backdrop-blur-sm z-10 rounded-l-3xl"
           >
             <div className="w-full h-full flex justify-center items-center ">
               <div className="flex flex-col justify-center items-center gap-6">
                 {/* line */}
-                <div className="w-[1px] h-[70px] bg-white/20"></div>
+                <div className="w-[1px] h-[70px] bg-white/50"></div>
                 {/* social icons */}
                 <div className="inline-block p-2 rounded-full cursor-pointer border border-white">
                   <FaFacebookF className="text-2xl text-black" />
