@@ -38,8 +38,8 @@ const cardVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 150,
-      damping: 10,
+      stiffness: 200,
+      damping: 20,
       ease: "easeInOut",
     },
   },
