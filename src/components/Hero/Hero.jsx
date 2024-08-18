@@ -16,8 +16,8 @@ const Hero = () => {
   const [sidebar, setSidebar] = React.useState(false);
 
   return (
-    <main className="bg-darkGray/95">
-      <section className="min-h-[650px] w-full">
+    <main className="bg-darkGray/95 md:min-h-[450px] md:w-full relative">
+      <section className="min-h-[650px] w-full  ">
         <div className="container">
           {/* Navbar Section */}
           <Navbar sidebar={sidebar} setSidebar={setSidebar} />
@@ -73,7 +73,7 @@ const Hero = () => {
                   duration: 2,
                 }}
                 src={LnF}
-                className="relative z-50 h-[900px] w-[900px] md:h-[600px] md:w-[700px] img-shadow mr-80 items-center justify-center"
+                className="relative z-50 h-[900px] w-[900px] md:h-[600px] md:w-[700px] img-shadow mr-80 items-center justify-center hidden md:block"
               />
               {/* orange circle ring */}
               {/* <div
@@ -91,7 +91,7 @@ const Hero = () => {
                     damping: 10,
                     delay: 1,
                   }}
-                  className="text-[150px] scale-150 font-bold text-darkGray/80 leading-none"
+                  className="text-[150px] scale-150 font-bold text-darkGray/80 leading-none  hidden md:block"
                 >
                   NIKE
                 </motion.h1>
