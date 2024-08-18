@@ -116,7 +116,7 @@ const Services = () => {
             className="text-center p-4"
           >
             <img
-              className=" w-[250px] h-[250px] ml-20 border-2 mt-10 border-primary rounded-2xl"
+              className=" w-[250px] h-[250px] ml-24 border-2 mt-8 border-primary rounded-2xl"
               src={service.image}
               alt={service.altText || "Service image"}
             />
