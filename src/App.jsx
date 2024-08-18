@@ -3,7 +3,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import WhereToBuy from "./components/WhereToBuy/WhereToBuy";
 import AppBanner from "./components/AppBanner/AppBanner";
-import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Hero />
       <Services />
       <WhereToBuy />
-      <AppBanner />
+      {/* <AppBanner /> */}
       <Footer />
     </div>
   );
