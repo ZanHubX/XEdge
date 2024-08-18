@@ -52,9 +52,10 @@ const Hero = () => {
                 <div className="relative z-10 space-y-4">
                   <h1 className="text-2xl">Jodan 1 Retro High OG</h1>
                   <h1 className="text-sm opacity-55 leading-loose">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Soluta officiis dignissimos aut. Necessitatibus magni minus
-                    enim esse qui, nostrum neque!
+                    The “Lost & Found” features a faux crumbled black leather
+                    collar that nods to the fact that the OG Jordan 1's collar
+                    has a tendency to crumble with age. Faux cracking is also
+                    present on the toe, mid-panel, and collar.
                   </h1>
                 </div>
                 <div className="absolute -top-6 -left-10 w-[250px] h-[195px] bg-gray-700/50"></div>
@@ -63,7 +64,6 @@ const Hero = () => {
             {/* Hero Image Section */}
             <div className="realtive">
               <motion.img
-               
                 initial={{ scale: 0 }}
                 animate={{ rotate: 360, scale: 1.1 }}
                 transition={{
