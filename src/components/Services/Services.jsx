@@ -29,20 +29,20 @@ const servicesData = [
 ];
 
 const cardVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 200,
-      damping: 20,
-      ease: "easeInOut",
-    },
-  },
+  // hidden: {
+  //   opacity: 0,
+  //   y: 20,
+  // },
+  // visible: {
+  //   opacity: 1,
+  //   y: 0,
+  //   transition: {
+  //     type: "spring",
+  //     stiffness: 200,
+  //     damping: 20,
+  //     ease: "easeInOut",
+  //   },
+  // },
 };
 
 const containerVariants = {
@@ -77,7 +77,7 @@ const Services = () => {
           Trend & <span className="text-primary">Unique</span>
         </motion.h1>
         <motion.p
-        variants={cardVariants}
+          variants={cardVariants}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -111,12 +111,16 @@ const Services = () => {
       >
         {servicesData.map((service, index) => (
           <motion.div
-            variants={cardVariants}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.6,
+            }}
             key={index}
             className="text-center p-4"
           >
             <img
-              className=" w-[250px] h-[250px] ml-24 border-2 mt-8 border-primary rounded-2xl"
+              className="w-full max-w-[200px] h-[200px] ml-20 md:ml-24 border-2 mt-8 border-primary rounded-2xl"
               src={service.image}
               alt={service.altText || "Service image"}
             />
