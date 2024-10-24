@@ -31,7 +31,7 @@ const AppBanner = () => {
             </p>
             {/* Image Link */}
             <div className="flex justify-center items-center gap-4">
-              <a href="#" className="max-h-[100px] sm:max-h-[120px] md:max-h-[200px]">
+              <a href="#" className="max-h-[150px] sm:max-h-[120px] md:max-h-[200px]">
                 <img src={AppStoreImg} alt="" />
               </a>
               <a href="#">
