@@ -14,7 +14,7 @@ const BannerStyle = {
 
 const AppBanner = () => {
   return (
-    <div className="conatiner my-14 w-full h-[600px] sm:h-[600px] rounded-3xl">
+    <div className="conatiner my-14 w-full h-[600px] sm:h-[500px] rounded-3xl">
       <div
         style={BannerStyle}
         className="container w-[1000px] h-[50px] sm:min-h-[200px] sm:flex sm:justify-end sm:items-center rounded-xl"
